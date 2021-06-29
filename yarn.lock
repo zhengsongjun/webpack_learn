@@ -1590,6 +1590,18 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
+mime-db@1.48.0:
+  version "1.48.0"
+  resolved "http://npm.obgah.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
+  integrity sha1-41sxBF3X6to6qtU37YijOvvvLR0=
+
+mime-types@^2.1.27:
+  version "2.1.31"
+  resolved "http://npm.obgah.com/mime-types/-/mime-types-2.1.31.tgz#a00d76b74317c61f9c2db2218b8e9f8e9c5c9e6b"
+  integrity sha1-oA12t0MXxh+cLbIhi46fjpxcnms=
+  dependencies:
+    mime-db "1.48.0"
+
 mimic-fn@^2.0.0:
   version "2.1.0"
   resolved "http://npm.obgah.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
@@ -2557,6 +2569,15 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "http://npm.obgah.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-loader@^4.1.1:
+  version "4.1.1"
+  resolved "http://npm.obgah.com/url-loader/-/url-loader-4.1.1.tgz#28505e905cae158cf07c92ca622d7f237e70a4e2"
+  integrity sha1-KFBekFyuFYzwfJLKYi1/I35wpOI=
+  dependencies:
+    loader-utils "^2.0.0"
+    mime-types "^2.1.27"
+    schema-utils "^3.0.0"
 
 url@^0.11.0:
   version "0.11.0"

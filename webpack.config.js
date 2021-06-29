@@ -12,10 +12,11 @@ module.exports = {
 		rules:[{
 			test:/\.jpe?g$/,
 			use:{
-				loader:'file-loader',
+				loader:'url-loader',
 				options:{
 					name:'[name]_[hash].[ext]',
-					outputPath:'images/'
+					outputPath:'images/',
+					limit:2 * 1024
 				}
 			}
 		}]
