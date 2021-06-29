@@ -13,6 +13,10 @@ module.exports = {
 			test:/\.jpe?g$/,
 			use:{
 				loader:'file-loader',
+				options:{
+					name:'[name]_[hash].[ext]',
+					outputPath:'images/'
+				}
 			}
 		}]
 	}
