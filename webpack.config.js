@@ -19,6 +19,21 @@ module.exports = {
 					limit:2 * 1024
 				}
 			}
-		}]
+		}, {
+			test: /\.css$/,
+			// 从右像左
+			// /css-lodaer 解析css 
+			//style-loader 将css代码塞到header标签里面/
+			// scss-loader 将scss语法变成css语法 sass-loader node-sass
+			use: ["style-loader", "css-loader"],
+		},{
+			test: /\.scss$/,
+			// 从右像左
+			// /css-lodaer 解析css 
+			//style-loader 将css代码塞到header标签里面/
+			// scss-loader 将scss语法变成css语法 sass-loader node-sass
+			use: ["style-loader", "css-loader","sass-loader"],
+		      }
+		]
 	}
 }
