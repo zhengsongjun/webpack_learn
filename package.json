@@ -1,0 +1,14 @@
+{
+  "name": "webpack01",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "bundle": "webpack"
+  },
+  "author": "zsj",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "4.26.0",
+    "webpack-cli": "3.1.2"
+  }
+}
