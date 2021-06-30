@@ -1,8 +1,11 @@
-
-
 body {
 
 #root {
 	background:red;
+	display: flex;
+	img {
+		border-radius: 10px;
+		transform: translate(100px,100px);
+	}
 }
 }

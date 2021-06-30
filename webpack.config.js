@@ -1,4 +1,5 @@
 const path = require('path')
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
 	mode:'production',
@@ -25,14 +26,15 @@ module.exports = {
 			// /css-lodaer 解析css 
 			//style-loader 将css代码塞到header标签里面/
 			// scss-loader 将scss语法变成css语法 sass-loader node-sass
-			use: ["style-loader", "css-loader"],
+			use: ["style-loader", "css-loader","postcss-loader"],
 		},{
 			test: /\.scss$/,
 			// 从右像左
 			// /css-lodaer 解析css 
 			//style-loader 将css代码塞到header标签里面/
 			// scss-loader 将scss语法变成css语法 sass-loader node-sass
-			use: ["style-loader", "css-loader","sass-loader"],
+			// postcss-loader 给scss文件添加前缀
+			use: ["style-loader", "css-loader","sass-loader","postcss-loader"],
 		      }
 		]
 	}
